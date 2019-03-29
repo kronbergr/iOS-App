@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14E7906C22259E2D0015D70E /* oolongTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E7906B22259E2D0015D70E /* oolongTimer.swift */; };
+		14E790702225A8050015D70E /* greenTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E7906F2225A8050015D70E /* greenTimer.swift */; };
+		14E79073222835460015D70E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E79072222835450015D70E /* libsqlite3.tbd */; };
+		14E7907822283D270015D70E /* whiteTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E7907722283D270015D70E /* whiteTimer.swift */; };
+		F56B3B21221F107D00591EBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B3B20221F107D00591EBC /* AppDelegate.swift */; };
+		F56B3B23221F107D00591EBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B3B22221F107D00591EBC /* ViewController.swift */; };
+		F56B3B26221F107D00591EBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56B3B24221F107D00591EBC /* Main.storyboard */; };
+		F56B3B28221F108F00591EBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56B3B27221F108F00591EBC /* Assets.xcassets */; };
+		F56B3B2B221F108F00591EBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56B3B29221F108F00591EBC /* LaunchScreen.storyboard */; };
+		F56B3B36221F108F00591EBC /* smarTeaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B3B35221F108F00591EBC /* smarTeaTests.swift */; };
+		F56B3B41221F108F00591EBC /* smarTeaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B3B40221F108F00591EBC /* smarTeaUITests.swift */; };
+		F56B3B51221F123E00591EBC /* ViewControllerblackTea.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B3B50221F123E00591EBC /* ViewControllerblackTea.swift */; };
+		F56B3B53221F313A00591EBC /* customTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B3B52221F313A00591EBC /* customTimer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F56B3B32221F108F00591EBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F56B3B15221F107D00591EBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F56B3B1C221F107D00591EBC;
+			remoteInfo = smarTea;
+		};
+		F56B3B3D221F108F00591EBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F56B3B15221F107D00591EBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F56B3B1C221F107D00591EBC;
+			remoteInfo = smarTea;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14E7906B22259E2D0015D70E /* oolongTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oolongTimer.swift; sourceTree = "<group>"; };
+		14E7906F2225A8050015D70E /* greenTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = greenTimer.swift; sourceTree = "<group>"; };
+		14E79072222835450015D70E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		14E79074222839940015D70E /* smarTea-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "smarTea-Bridging-Header.h"; sourceTree = "<group>"; };
+		14E7907722283D270015D70E /* whiteTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whiteTimer.swift; sourceTree = "<group>"; };
+		F56B3B1D221F107D00591EBC /* smarTea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smarTea.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F56B3B20221F107D00591EBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F56B3B22221F107D00591EBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F56B3B25221F107D00591EBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F56B3B27221F108F00591EBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F56B3B2A221F108F00591EBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F56B3B2C221F108F00591EBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F56B3B31221F108F00591EBC /* smarTeaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smarTeaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F56B3B35221F108F00591EBC /* smarTeaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smarTeaTests.swift; sourceTree = "<group>"; };
+		F56B3B37221F108F00591EBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F56B3B3C221F108F00591EBC /* smarTeaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smarTeaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F56B3B40221F108F00591EBC /* smarTeaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smarTeaUITests.swift; sourceTree = "<group>"; };
+		F56B3B42221F108F00591EBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F56B3B50221F123E00591EBC /* ViewControllerblackTea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerblackTea.swift; sourceTree = "<group>"; };
+		F56B3B52221F313A00591EBC /* customTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTimer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F56B3B1A221F107D00591EBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14E79073222835460015D70E /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F56B3B2E221F108F00591EBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F56B3B39221F108F00591EBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14E79071222835450015D70E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14E79072222835450015D70E /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F56B3B14221F107D00591EBC = {
+			isa = PBXGroup;
+			children = (
+				F56B3B1F221F107D00591EBC /* smarTea */,
+				F56B3B34221F108F00591EBC /* smarTeaTests */,
+				F56B3B3F221F108F00591EBC /* smarTeaUITests */,
+				F56B3B1E221F107D00591EBC /* Products */,
+				14E79071222835450015D70E /* Frameworks */,
+				14E79074222839940015D70E /* smarTea-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		F56B3B1E221F107D00591EBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F56B3B1D221F107D00591EBC /* smarTea.app */,
+				F56B3B31221F108F00591EBC /* smarTeaTests.xctest */,
+				F56B3B3C221F108F00591EBC /* smarTeaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F56B3B1F221F107D00591EBC /* smarTea */ = {
+			isa = PBXGroup;
+			children = (
+				F56B3B20221F107D00591EBC /* AppDelegate.swift */,
+				F56B3B22221F107D00591EBC /* ViewController.swift */,
+				F56B3B24221F107D00591EBC /* Main.storyboard */,
+				14E7907722283D270015D70E /* whiteTimer.swift */,
+				14E7906F2225A8050015D70E /* greenTimer.swift */,
+				14E7906B22259E2D0015D70E /* oolongTimer.swift */,
+				F56B3B52221F313A00591EBC /* customTimer.swift */,
+				F56B3B50221F123E00591EBC /* ViewControllerblackTea.swift */,
+				F56B3B27221F108F00591EBC /* Assets.xcassets */,
+				F56B3B29221F108F00591EBC /* LaunchScreen.storyboard */,
+				F56B3B2C221F108F00591EBC /* Info.plist */,
+			);
+			path = smarTea;
+			sourceTree = "<group>";
+		};
+		F56B3B34221F108F00591EBC /* smarTeaTests */ = {
+			isa = PBXGroup;
+			children = (
+				F56B3B35221F108F00591EBC /* smarTeaTests.swift */,
+				F56B3B37221F108F00591EBC /* Info.plist */,
+			);
+			path = smarTeaTests;
+			sourceTree = "<group>";
+		};
+		F56B3B3F221F108F00591EBC /* smarTeaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F56B3B40221F108F00591EBC /* smarTeaUITests.swift */,
+				F56B3B42221F108F00591EBC /* Info.plist */,
+			);
+			path = smarTeaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F56B3B1C221F107D00591EBC /* smarTea */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F56B3B45221F108F00591EBC /* Build configuration list for PBXNativeTarget "smarTea" */;
+			buildPhases = (
+				F56B3B19221F107D00591EBC /* Sources */,
+				F56B3B1A221F107D00591EBC /* Frameworks */,
+				F56B3B1B221F107D00591EBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = smarTea;
+			productName = smarTea;
+			productReference = F56B3B1D221F107D00591EBC /* smarTea.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F56B3B30221F108F00591EBC /* smarTeaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F56B3B48221F108F00591EBC /* Build configuration list for PBXNativeTarget "smarTeaTests" */;
+			buildPhases = (
+				F56B3B2D221F108F00591EBC /* Sources */,
+				F56B3B2E221F108F00591EBC /* Frameworks */,
+				F56B3B2F221F108F00591EBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F56B3B33221F108F00591EBC /* PBXTargetDependency */,
+			);
+			name = smarTeaTests;
+			productName = smarTeaTests;
+			productReference = F56B3B31221F108F00591EBC /* smarTeaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F56B3B3B221F108F00591EBC /* smarTeaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F56B3B4B221F108F00591EBC /* Build configuration list for PBXNativeTarget "smarTeaUITests" */;
+			buildPhases = (
+				F56B3B38221F108F00591EBC /* Sources */,
+				F56B3B39221F108F00591EBC /* Frameworks */,
+				F56B3B3A221F108F00591EBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F56B3B3E221F108F00591EBC /* PBXTargetDependency */,
+			);
+			name = smarTeaUITests;
+			productName = smarTeaUITests;
+			productReference = F56B3B3C221F108F00591EBC /* smarTeaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F56B3B15221F107D00591EBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Robin Kronberg";
+				TargetAttributes = {
+					F56B3B1C221F107D00591EBC = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					F56B3B30221F108F00591EBC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F56B3B1C221F107D00591EBC;
+					};
+					F56B3B3B221F108F00591EBC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F56B3B1C221F107D00591EBC;
+					};
+				};
+			};
+			buildConfigurationList = F56B3B18221F107D00591EBC /* Build configuration list for PBXProject "smarTea" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F56B3B14221F107D00591EBC;
+			productRefGroup = F56B3B1E221F107D00591EBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F56B3B1C221F107D00591EBC /* smarTea */,
+				F56B3B30221F108F00591EBC /* smarTeaTests */,
+				F56B3B3B221F108F00591EBC /* smarTeaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F56B3B1B221F107D00591EBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F56B3B2B221F108F00591EBC /* LaunchScreen.storyboard in Resources */,
+				F56B3B28221F108F00591EBC /* Assets.xcassets in Resources */,
+				F56B3B26221F107D00591EBC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F56B3B2F221F108F00591EBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F56B3B3A221F108F00591EBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F56B3B19221F107D00591EBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F56B3B53221F313A00591EBC /* customTimer.swift in Sources */,
+				14E790702225A8050015D70E /* greenTimer.swift in Sources */,
+				F56B3B23221F107D00591EBC /* ViewController.swift in Sources */,
+				14E7907822283D270015D70E /* whiteTimer.swift in Sources */,
+				14E7906C22259E2D0015D70E /* oolongTimer.swift in Sources */,
+				F56B3B21221F107D00591EBC /* AppDelegate.swift in Sources */,
+				F56B3B51221F123E00591EBC /* ViewControllerblackTea.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F56B3B2D221F108F00591EBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F56B3B36221F108F00591EBC /* smarTeaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F56B3B38221F108F00591EBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F56B3B41221F108F00591EBC /* smarTeaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F56B3B33221F108F00591EBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F56B3B1C221F107D00591EBC /* smarTea */;
+			targetProxy = F56B3B32221F108F00591EBC /* PBXContainerItemProxy */;
+		};
+		F56B3B3E221F108F00591EBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F56B3B1C221F107D00591EBC /* smarTea */;
+			targetProxy = F56B3B3D221F108F00591EBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F56B3B24221F107D00591EBC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F56B3B25221F107D00591EBC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F56B3B29221F108F00591EBC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F56B3B2A221F108F00591EBC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F56B3B43221F108F00591EBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F56B3B44221F108F00591EBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F56B3B46221F108F00591EBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = smarTea/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rk.smarTea;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "smarTea-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F56B3B47221F108F00591EBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = smarTea/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rk.smarTea;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "smarTea-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F56B3B49221F108F00591EBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = smarTeaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rk.smarTeaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/smarTea.app/smarTea";
+			};
+			name = Debug;
+		};
+		F56B3B4A221F108F00591EBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = smarTeaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rk.smarTeaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/smarTea.app/smarTea";
+			};
+			name = Release;
+		};
+		F56B3B4C221F108F00591EBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = smarTeaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rk.smarTeaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = smarTea;
+			};
+			name = Debug;
+		};
+		F56B3B4D221F108F00591EBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = smarTeaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rk.smarTeaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = smarTea;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F56B3B18221F107D00591EBC /* Build configuration list for PBXProject "smarTea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F56B3B43221F108F00591EBC /* Debug */,
+				F56B3B44221F108F00591EBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F56B3B45221F108F00591EBC /* Build configuration list for PBXNativeTarget "smarTea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F56B3B46221F108F00591EBC /* Debug */,
+				F56B3B47221F108F00591EBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F56B3B48221F108F00591EBC /* Build configuration list for PBXNativeTarget "smarTeaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F56B3B49221F108F00591EBC /* Debug */,
+				F56B3B4A221F108F00591EBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F56B3B4B221F108F00591EBC /* Build configuration list for PBXNativeTarget "smarTeaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F56B3B4C221F108F00591EBC /* Debug */,
+				F56B3B4D221F108F00591EBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F56B3B15221F107D00591EBC /* Project object */;
+}

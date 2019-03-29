@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="smarTea" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abppBkg" translatesAutoresizingMaskIntoConstraints="NO" id="Fy3-re-i6L">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tea Time" translatesAutoresizingMaskIntoConstraints="NO" id="4aa-9Q-sa1">
+                                <rect key="frame" x="118.66666666666669" y="89" width="177" height="172"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="172" id="1dT-ll-Vg6"/>
+                                    <constraint firstAttribute="width" constant="177" id="mlk-0C-AaT"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="NK7-5O-U4o">
+                                <rect key="frame" x="86.666666666666686" y="278" width="241" height="390"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9OU-N2-cMs">
+                                        <rect key="frame" x="0.0" y="0.0" width="241" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="Hpd-hA-j3t"/>
+                                            <constraint firstAttribute="width" constant="241" id="Mlo-aF-mca"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="241" id="oCD-Gv-xM7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="25"/>
+                                        <state key="normal" title="Black Tea " backgroundImage="btnBkgGreen">
+                                            <color key="titleColor" red="0.92082816362380981" green="0.99781030416488647" blue="0.87449276447296143" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="R9n-dD-akH" kind="presentation" id="fGD-nH-AON"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tqt-jb-ICd">
+                                        <rect key="frame" x="0.0" y="86" width="241" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="241" id="0GN-ym-bMg"/>
+                                            <constraint firstAttribute="height" constant="46" id="JBZ-M8-yhr"/>
+                                            <constraint firstAttribute="width" constant="241" id="bVI-pn-hi2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="25"/>
+                                        <state key="normal" title="Oolong Tea" backgroundImage="btnBkgGreen">
+                                            <color key="titleColor" red="0.92082816359999997" green="0.99781030420000005" blue="0.87449276450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="wso-UO-cg6" kind="presentation" id="I6c-iK-QCc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vy1-mA-HRZ">
+                                        <rect key="frame" x="0.0" y="172" width="241" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="241" id="8XT-9z-E7Y"/>
+                                            <constraint firstAttribute="height" constant="46" id="AI9-fJ-0wN"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="241" id="Nsh-xu-XjO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="25"/>
+                                        <state key="normal" title="White Tea" backgroundImage="btnBkgGreen">
+                                            <color key="titleColor" red="0.92082816359999997" green="0.99781030420000005" blue="0.87449276450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="DjY-gz-pCw" kind="presentation" id="0Wp-5K-3Od"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="io4-xu-Oxu">
+                                        <rect key="frame" x="0.0" y="258" width="241" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="6SN-LR-Z9N"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="241" id="Gle-H6-yej"/>
+                                            <constraint firstAttribute="width" constant="241" id="pAn-7H-eRq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="25"/>
+                                        <state key="normal" title="Green Tea" backgroundImage="btnBkgGreen">
+                                            <color key="titleColor" red="0.92082816359999997" green="0.99781030420000005" blue="0.87449276450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="aOW-54-lMo" kind="presentation" id="s2D-dE-FjS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okN-dK-0TX">
+                                        <rect key="frame" x="0.0" y="344" width="241" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="241" id="3yG-cZ-iQA"/>
+                                            <constraint firstAttribute="height" constant="46" id="tqg-ch-5BA"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="241" id="zL4-XX-pMl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="25"/>
+                                        <state key="normal" title="Custom Timer" backgroundImage="btnBkgGreen">
+                                            <color key="titleColor" red="0.92082816359999997" green="0.99781030420000005" blue="0.87449276450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="v3t-o9-R5N" kind="presentation" id="rT4-MR-A5j"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92088860273361206" green="0.99775773286819458" blue="0.87841504812240601" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Fy3-re-i6L" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="0LE-dd-cYU"/>
+                            <constraint firstItem="4aa-9Q-sa1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="69" id="1IK-qK-4eg"/>
+                            <constraint firstItem="NK7-5O-U4o" firstAttribute="centerX" secondItem="Fy3-re-i6L" secondAttribute="centerX" id="4J3-iM-jsl"/>
+                            <constraint firstItem="Fy3-re-i6L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Erk-Bx-pUp"/>
+                            <constraint firstAttribute="trailing" secondItem="Fy3-re-i6L" secondAttribute="trailing" id="OqX-yt-iKj"/>
+                            <constraint firstItem="4aa-9Q-sa1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gGc-Jr-TD5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NK7-5O-U4o" secondAttribute="bottom" constant="68" id="my7-oQ-n9t"/>
+                            <constraint firstItem="Fy3-re-i6L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pi7-Hf-Ehc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1527.536231884058" y="-427.98913043478262"/>
+        </scene>
+        <!--Custom Timer-->
+        <scene sceneID="gcn-xT-5ul">
+            <objects>
+                <viewController id="v3t-o9-R5N" customClass="customTimer" customModule="smarTea" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6oE-fK-CSU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abppBkg" translatesAutoresizingMaskIntoConstraints="NO" id="tah-DE-9dM">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uN4-U3-KL9">
+                                <rect key="frame" x="36" y="60" width="65" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YEX-dl-QhO"/>
+                                    <constraint firstAttribute="width" constant="65" id="ikS-Ad-AfJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
+                                <state key="normal" title="Home" backgroundImage="btnBkgGreen">
+                                    <color key="titleColor" red="0.92082816359999997" green="0.99781030420000005" blue="0.87449276450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="rEl-oF-hsx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ld0-Lp-fb9">
+                                <rect key="frame" x="50" y="588" width="91" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="JcU-FA-wNP"/>
+                                    <constraint firstAttribute="height" constant="38" id="kGo-h7-Tfv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="25"/>
+                                <state key="normal" title="Start" backgroundImage="btnBkgGreen">
+                                    <color key="titleColor" red="0.92082816359999997" green="0.99781030420000005" blue="0.87449276450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="start:" destination="v3t-o9-R5N" eventType="touchUpInside" id="ovV-n7-Qts"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="300" minValue="30" maxValue="600" translatesAutoresizingMaskIntoConstraints="NO" id="9fv-j3-tfM">
+                                <rect key="frame" x="57" y="428.66666666666669" width="300" height="30"/>
+                                <color key="tintColor" red="0.27393308280000001" green="0.61545068030000005" blue="0.23519960049999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="Ncc-mz-Obx"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderAction:" destination="v3t-o9-R5N" eventType="valueChanged" id="yKq-st-uSe"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Custom Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwQ-rP-SV0">
+                                <rect key="frame" x="90" y="257" width="234" height="74"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="38"/>
+                                <color key="textColor" red="0.19181371820000001" green="0.43407774249999997" blue="0.16746114819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88S-F7-Guy">
+                                <rect key="frame" x="50" y="465.66666666666669" width="43.666666666666657" height="23.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <color key="textColor" red="0.19181371820000001" green="0.43407774249999997" blue="0.16746114819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lf-tx-Wtx">
+                                <rect key="frame" x="308" y="464.66666666666669" width="56" height="23.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <color key="textColor" red="0.19181371820000001" green="0.43407774249999997" blue="0.16746114819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="8cc-hZ-Tgu">
+                                <rect key="frame" x="151.33333333333334" y="339" width="111.66666666666666" height="58"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHv-XR-AC7">
+                                        <rect key="frame" x="0.0" y="0.0" width="30.333333333333332" height="58"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="50"/>
+                                        <color key="textColor" red="0.19181371820832036" green="0.43407774248274111" blue="0.16746114817380983" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQ3-Ew-SDF">
+                                        <rect key="frame" x="31.333333333333314" y="0.0" width="19" height="58"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="50"/>
+                                        <color key="textColor" red="0.19181371820000001" green="0.43407774249999997" blue="0.16746114819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BxZ-uV-fFz">
+                                        <rect key="frame" x="51.333333333333314" y="0.0" width="60.333333333333343" height="58"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="50"/>
+                                        <color key="textColor" red="0.19181371820000001" green="0.43407774249999997" blue="0.16746114819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oT2-xl-w9f">
+                                <rect key="frame" x="273" y="588" width="91" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="IEj-z9-4nz"/>
+                                    <constraint firstAttribute="height" constant="38" id="hw3-1p-RW4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="25"/>
+                                <state key="normal" title="Stop" backgroundImage="btnBkgGreen">
+                                    <color key="titleColor" red="0.92082816359999997" green="0.99781030420000005" blue="0.87449276450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="stop:" destination="v3t-o9-R5N" eventType="touchUpInside" id="rtn-X9-03i"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Tea Time" translatesAutoresizingMaskIntoConstraints="NO" id="rbH-AB-hK3">
+                                <rect key="frame" x="115" y="90" width="177" height="172"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="148" id="47L-rc-WK3"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92088860273361206" green="0.99775773286819458" blue="0.87841504812240601" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="88S-F7-Guy" firstAttribute="top" secondItem="9fv-j3-tfM" secondAttribute="bottom" constant="8" symbolic="YES" id="1Tr-Tr-3fh"/>
+                            <constraint firstItem="uN4-U3-KL9" firstAttribute="top" secondItem="0Qw-r0-1xB" secondAttribute="top" constant="40" id="5db-CW-Ssp"/>
+                            <constraint firstItem="vwQ-rP-SV0" firstAttribute="top" secondItem="rbH-AB-hK3" secondAttribute="bottom" constant="19" id="6wA-5d-410"/>
+                            <constraint firstItem="ld0-Lp-fb9" firstAttribute="top" secondItem="88S-F7-Guy" secondAttribute="bottom" constant="99" id="7mk-se-LcQ"/>
+                            <constraint firstItem="uN4-U3-KL9" firstAttribute="leading" secondItem="0Qw-r0-1xB" secondAttribute="leading" constant="36" id="DTx-GC-D2d"/>
+                            <constraint firstAttribute="trailing" secondItem="tah-DE-9dM" secondAttribute="trailing" id="Dag-8q-hIa"/>
+                            <constraint firstItem="tah-DE-9dM" firstAttribute="leading" secondItem="6oE-fK-CSU" secondAttribute="leading" id="MyP-SW-4nY"/>
+                            <constraint firstItem="8cc-hZ-Tgu" firstAttribute="centerY" secondItem="6oE-fK-CSU" secondAttribute="centerY" id="Ubj-F7-gMs"/>
+                            <constraint firstItem="oT2-xl-w9f" firstAttribute="baseline" secondItem="ld0-Lp-fb9" secondAttribute="baseline" id="YOu-qE-ccG"/>
+                            <constraint firstItem="tah-DE-9dM" firstAttribute="bottom" secondItem="0Qw-r0-1xB" secondAttribute="bottom" id="ZIU-Se-0HO"/>
+                            <constraint firstItem="rbH-AB-hK3" firstAttribute="top" secondItem="0Qw-r0-1xB" secondAttribute="top" constant="70" id="Zf9-gE-knm"/>
+                            <constraint firstItem="0Qw-r0-1xB" firstAttribute="trailing" secondItem="8lf-tx-Wtx" secondAttribute="trailing" constant="50" id="ZsA-4L-2zd"/>
+                            <constraint firstItem="rbH-AB-hK3" firstAttribute="centerX" secondItem="vwQ-rP-SV0" secondAttribute="centerX" id="aKV-VT-Y1d"/>
+                            <constraint firstItem="88S-F7-Guy" firstAttribute="leading" secondItem="0Qw-r0-1xB" secondAttribute="leading" constant="50" id="bjB-Uo-Qz5"/>
+                            <constraint firstItem="oT2-xl-w9f" firstAttribute="trailing" secondItem="8lf-tx-Wtx" secondAttribute="trailing" id="euo-2Q-wga"/>
+                            <constraint firstItem="tah-DE-9dM" firstAttribute="top" secondItem="0Qw-r0-1xB" secondAttribute="top" id="fx5-30-CYY"/>
+                            <constraint firstItem="tah-DE-9dM" firstAttribute="centerX" secondItem="9fv-j3-tfM" secondAttribute="centerX" id="gQ9-8p-szi"/>
+                            <constraint firstAttribute="bottom" secondItem="88S-F7-Guy" secondAttribute="bottom" constant="247" id="iXL-51-kxn"/>
+                            <constraint firstItem="9fv-j3-tfM" firstAttribute="leading" secondItem="0Qw-r0-1xB" secondAttribute="leading" constant="59" id="jJA-g7-OAV"/>
+                            <constraint firstItem="88S-F7-Guy" firstAttribute="leading" secondItem="ld0-Lp-fb9" secondAttribute="leading" id="kQI-C1-cc0"/>
+                            <constraint firstItem="rbH-AB-hK3" firstAttribute="leading" secondItem="0Qw-r0-1xB" secondAttribute="leading" constant="115" id="mnI-O8-bMm"/>
+                            <constraint firstItem="rbH-AB-hK3" firstAttribute="centerX" secondItem="8cc-hZ-Tgu" secondAttribute="centerX" id="qrg-1G-wnj"/>
+                            <constraint firstItem="8lf-tx-Wtx" firstAttribute="top" secondItem="9fv-j3-tfM" secondAttribute="bottom" constant="7" id="vEO-pH-7hS"/>
+                            <constraint firstItem="8cc-hZ-Tgu" firstAttribute="centerX" secondItem="6oE-fK-CSU" secondAttribute="centerX" id="xUN-Cr-yHH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0Qw-r0-1xB"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="BxZ-uV-fFz" id="rn5-ym-cAE"/>
+                        <outlet property="minutesLabel" destination="qHv-XR-AC7" id="jP3-zG-CK0"/>
+                        <outlet property="sliderOutlet" destination="9fv-j3-tfM" id="Tmv-PW-IlY"/>
+                        <outlet property="startOutlet" destination="ld0-Lp-fb9" id="Hd2-Ug-ElT"/>
+                        <outlet property="stopOutlet" destination="oT2-xl-w9f" id="brZ-zn-mku"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2jd-Zk-P7E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-727.20000000000005" y="-429.53523238380814"/>
+        </scene>
+        <!--Oolong Timer-->
+        <scene sceneID="lbV-jr-UZV">
+            <objects>
+                <viewController id="wso-UO-cg6" customClass="oolongTimer" customModule="smarTea" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zfs-DB-MTe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abppBkg" translatesAutoresizingMaskIntoConstraints="NO" id="2Aq-xq-kKk">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Until Your Tea Is Ready!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAH-DI-xzD">
+                                <rect key="frame" x="105.00000000000001" y="406" width="204.33333333333337" height="20"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                <color key="textColor" red="0.19181371820000001" green="0.43407774249999997" blue="0.16746114819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For best results, heat your water to 190° before pouring over your tea." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGr-JF-LYq">
+                                <rect key="frame" x="33" y="557" width="352" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="azf-XX-Mzv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                <color key="textColor" red="0.19181371820000001" green="0.43407774249999997" blue="0.16746114819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="NHH-ml-u3I">
+                                <rect key="frame" x="143" y="339" width="128" height="58"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TJ-c3-eZG">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="58"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="qhu-rA-yNo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="50"/>
+                                        <color key="textColor" red="0.19181371820000001" green="0.43407774249999997" blue="0.16746114819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x0c-GC-iBY">
+                                        <rect key="frame" x="39" y="0.0" width="19" height="58"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="19" id="mpf-Fz-tJl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="50"/>
+                                        <color key="textColor" red="0.19181371820000001" green="0.43407774249999997" blue="0.16746114819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1c7-qd-e8E">
+                                        <rect key="frame" x="67" y="0.0" width="61" height="58"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="50"/>
+                                        <color key="textColor" red="0.19181371820000001" green="0.43407774249999997" blue="0.16746114819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bcs-w4-62h">
+                                <rect key="frame" x="36" y="60" width="65" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AI0-ca-7GN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
+                                <state key="normal" title="Home" backgroundImage="btnBkgGreen">
+                                    <color key="titleColor" red="0.92082816359999997" green="0.99781030420000005" blue="0.87449276450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="BEe-QH-j3A"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Tea Time" translatesAutoresizingMaskIntoConstraints="NO" id="O3R-Yg-43f">
+                                <rect key="frame" x="117" y="101" width="177" height="172"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oolong Tea" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJt-KB-87O">
+                                <rect key="frame" x="96" y="257" width="222" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="Lb8-J0-pyg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="38"/>
+                                <color key="textColor" red="0.19181371820000001" green="0.43407774249999997" blue="0.16746114819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92082816359999997" green="0.99781030420000005" blue="0.87449276450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="bGr-JF-LYq" firstAttribute="top" secondItem="HAH-DI-xzD" secondAttribute="bottom" constant="131" id="0Rl-sj-Z99"/>
+                            <constraint firstItem="OJt-KB-87O" firstAttribute="centerX" secondItem="NHH-ml-u3I" secondAttribute="centerX" id="339-XO-s4J"/>
+                            <constraint firstItem="2Aq-xq-kKk" firstAttribute="centerX" secondItem="NHH-ml-u3I" secondAttribute="centerX" id="3oc-dH-UeW"/>
+                            <constraint firstItem="xcP-p7-h5J" firstAttribute="trailing" secondItem="bGr-JF-LYq" secondAttribute="trailing" constant="29" id="63q-ZV-TpP"/>
+                            <constraint firstItem="OJt-KB-87O" firstAttribute="top" secondItem="O3R-Yg-43f" secondAttribute="bottom" constant="8" symbolic="YES" id="7Xj-gc-VPx"/>
+                            <constraint firstItem="NHH-ml-u3I" firstAttribute="centerY" secondItem="Zfs-DB-MTe" secondAttribute="centerY" id="8n6-rT-RQh"/>
+                            <constraint firstItem="OJt-KB-87O" firstAttribute="centerX" secondItem="Zfs-DB-MTe" secondAttribute="centerX" id="Ei6-qH-8zv"/>
+                            <constraint firstItem="bGr-JF-LYq" firstAttribute="leading" secondItem="xcP-p7-h5J" secondAttribute="leading" constant="33" id="FA9-zO-LJA"/>
+                            <constraint firstItem="xcP-p7-h5J" firstAttribute="bottom" secondItem="bGr-JF-LYq" secondAttribute="bottom" constant="92" id="RQp-Zn-uhi"/>
+                            <constraint firstItem="OJt-KB-87O" firstAttribute="leading" secondItem="xcP-p7-h5J" secondAttribute="leading" constant="96" id="RYC-AF-SvI"/>
+                            <constraint firstItem="2Aq-xq-kKk" firstAttribute="top" secondItem="xcP-p7-h5J" secondAttribute="top" id="SIS-pd-GHS"/>
+                            <constraint firstItem="Bcs-w4-62h" firstAttribute="top" secondItem="xcP-p7-h5J" secondAttribute="top" constant="40" id="SsA-ef-d77"/>
+                            <constraint firstItem="Bcs-w4-62h" firstAttribute="leading" secondItem="xcP-p7-h5J" secondAttribute="leading" constant="36" id="Uah-ks-GbY"/>
+                            <constraint firstItem="HAH-DI-xzD" firstAttribute="top" secondItem="NHH-ml-u3I" secondAttribute="bottom" constant="9" id="WBH-lo-Xis"/>
+                            <constraint firstItem="HAH-DI-xzD" firstAttribute="leading" secondItem="xcP-p7-h5J" secondAttribute="leading" constant="105" id="Z03-gr-ryM"/>
+                            <constraint firstItem="xcP-p7-h5J" firstAttribute="trailing" secondItem="HAH-DI-xzD" secondAttribute="trailing" constant="104.67" id="eAm-Am-Bi8"/>
+                            <constraint firstItem="2Aq-xq-kKk" firstAttribute="bottom" secondItem="xcP-p7-h5J" secondAttribute="bottom" id="fsh-dS-N5M"/>
+                            <constraint firstItem="2Aq-xq-kKk" firstAttribute="leading" secondItem="Zfs-DB-MTe" secondAttribute="leading" id="gV9-my-ip1"/>
+                            <constraint firstItem="O3R-Yg-43f" firstAttribute="top" secondItem="xcP-p7-h5J" secondAttribute="top" constant="81" id="qNU-YZ-M2m"/>
+                            <constraint firstItem="NHH-ml-u3I" firstAttribute="leading" secondItem="xcP-p7-h5J" secondAttribute="leading" constant="143" id="rzU-tM-JR0"/>
+                            <constraint firstItem="bGr-JF-LYq" firstAttribute="centerX" secondItem="O3R-Yg-43f" secondAttribute="centerX" id="sKL-mN-saQ"/>
+                            <constraint firstItem="NHH-ml-u3I" firstAttribute="top" secondItem="OJt-KB-87O" secondAttribute="bottom" constant="8" symbolic="YES" id="tZ3-Ok-bHP"/>
+                            <constraint firstItem="xcP-p7-h5J" firstAttribute="trailing" secondItem="Bcs-w4-62h" secondAttribute="trailing" constant="313" id="w0n-Qn-oUw"/>
+                            <constraint firstItem="O3R-Yg-43f" firstAttribute="leading" secondItem="xcP-p7-h5J" secondAttribute="leading" constant="117" id="xHo-bt-HsW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xcP-p7-h5J"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblOTmin" destination="6TJ-c3-eZG" id="6Eu-JE-XCc"/>
+                        <outlet property="lblOTsec" destination="1c7-qd-e8E" id="P9J-Bi-iUZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XCE-Iz-fTQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-727.536231884058" y="308.96739130434787"/>
+        </scene>
+        <!--Black Tea Timer-->
+        <scene sceneID="PAf-hu-Hm5">
+            <objects>
+                <viewController id="R9n-dD-akH" customClass="blackTeaTimer" customModule="smarTea" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4gp-AD-am9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abppBkg" translatesAutoresizingMaskIntoConstraints="NO" id="cuf-Up-Mqp">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Tea Time" translatesAutoresizingMaskIntoConstraints="NO" id="hJD-Z5-J61">
+                                <rect key="frame" x="117" y="101" width="177" height="172"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Until Your Tea Is Ready!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3z-JD-9sv">
+                                <rect key="frame" x="105.00000000000001" y="406" width="204.33333333333337" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="c1D-3n-Oxz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                <color key="textColor" red="0.19181371820000001" green="0.43407774249999997" blue="0.16746114819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7Ev-J7-04y">
+                                <rect key="frame" x="144" y="348" width="126" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vD-e8-jnW">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="fan-tl-a4M"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="50"/>
+                                        <color key="textColor" red="0.19181371820000001" green="0.43407774249999997" blue="0.16746114819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoH-Br-RYa">
+                                        <rect key="frame" x="38" y="0.0" width="19" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="19" id="BiV-VH-8RH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="50"/>
+                                        <color key="textColor" red="0.19181371820000001" green="0.43407774249999997" blue="0.16746114819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLH-a9-xvX">
+                                        <rect key="frame" x="65" y="0.0" width="61" height="40"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="50"/>
+                                        <color key="textColor" red="0.19181371820000001" green="0.43407774249999997" blue="0.16746114819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uif-q4-sdw">
+                                <rect key="frame" x="36" y="60" width="65" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="rTh-tD-xZG"/>
+                                    <constraint firstAttribute="height" constant="30" id="rZO-Z1-OQQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
+                                <state key="normal" title="Home" backgroundImage="btnBkgGreen">
+                                    <color key="titleColor" red="0.92082816359999997" green="0.99781030420000005" blue="0.87449276450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="QHe-67-yUG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For best results, bring your water to a full rolling  boil before pouring over your tea." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fH4-Qo-IRF">
+                                <rect key="frame" x="33" y="557" width="352" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="NHX-HK-iIc"/>
+                                    <constraint firstAttribute="width" constant="352" id="aAT-If-SLA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                <color key="textColor" red="0.19181371820000001" green="0.43407774249999997" blue="0.16746114819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Black Tea" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSM-xF-mtz">
+                                <rect key="frame" x="96" y="266" width="222" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="222" id="5aF-Ev-Ft9"/>
+                                    <constraint firstAttribute="height" constant="74" id="Tbz-Nv-ukC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="38"/>
+                                <color key="textColor" red="0.19181371820000001" green="0.43407774249999997" blue="0.16746114819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92082816359999997" green="0.99781030420000005" blue="0.87449276450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="7Ev-J7-04y" firstAttribute="leading" secondItem="zP1-Ji-RyH" secondAttribute="leading" constant="144" id="4F9-gf-by2"/>
+                            <constraint firstItem="Uif-q4-sdw" firstAttribute="leading" secondItem="4gp-AD-am9" secondAttribute="leading" constant="36" id="564-F8-Mfk"/>
+                            <constraint firstItem="7Ev-J7-04y" firstAttribute="centerX" secondItem="4gp-AD-am9" secondAttribute="centerX" id="8Dz-aM-YOx"/>
+                            <constraint firstItem="zP1-Ji-RyH" firstAttribute="bottom" secondItem="fH4-Qo-IRF" secondAttribute="bottom" constant="92" id="8cx-Ht-PIx"/>
+                            <constraint firstItem="zP1-Ji-RyH" firstAttribute="trailing" secondItem="hJD-Z5-J61" secondAttribute="trailing" constant="113" id="9Sz-RS-zzN"/>
+                            <constraint firstItem="zP1-Ji-RyH" firstAttribute="trailing" secondItem="Uif-q4-sdw" secondAttribute="trailing" constant="313" id="A5j-g4-u0c"/>
+                            <constraint firstItem="cuf-Up-Mqp" firstAttribute="top" secondItem="zP1-Ji-RyH" secondAttribute="top" id="Bxk-WI-xjE"/>
+                            <constraint firstItem="cuf-Up-Mqp" firstAttribute="bottom" secondItem="zP1-Ji-RyH" secondAttribute="bottom" id="GZU-kn-boE"/>
+                            <constraint firstItem="hJD-Z5-J61" firstAttribute="leading" secondItem="zP1-Ji-RyH" secondAttribute="leading" constant="117" id="HXU-oU-XmP"/>
+                            <constraint firstItem="Uif-q4-sdw" firstAttribute="top" secondItem="zP1-Ji-RyH" secondAttribute="top" constant="40" id="JTr-2M-68T"/>
+                            <constraint firstItem="7Ev-J7-04y" firstAttribute="top" secondItem="LSM-xF-mtz" secondAttribute="bottom" constant="8" id="NAS-vJ-TMR"/>
+                            <constraint firstItem="LSM-xF-mtz" firstAttribute="centerX" secondItem="4gp-AD-am9" secondAttribute="centerX" id="NFE-k3-WfO"/>
+                            <constraint firstItem="LSM-xF-mtz" firstAttribute="top" secondItem="hJD-Z5-J61" secondAttribute="bottom" constant="8" symbolic="YES" id="PaD-M4-e1m"/>
+                            <constraint firstItem="J3z-JD-9sv" firstAttribute="top" secondItem="7Ev-J7-04y" secondAttribute="bottom" constant="9" id="PeU-XI-vtm"/>
+                            <constraint firstItem="J3z-JD-9sv" firstAttribute="top" secondItem="7Ev-J7-04y" secondAttribute="bottom" constant="18" id="Rm6-gD-7Bv"/>
+                            <constraint firstAttribute="trailing" secondItem="cuf-Up-Mqp" secondAttribute="trailing" id="Z8N-XQ-L5h"/>
+                            <constraint firstItem="cuf-Up-Mqp" firstAttribute="leading" secondItem="4gp-AD-am9" secondAttribute="leading" id="bOx-fU-57t"/>
+                            <constraint firstItem="hJD-Z5-J61" firstAttribute="top" secondItem="zP1-Ji-RyH" secondAttribute="top" constant="81" id="c82-V4-NF2"/>
+                            <constraint firstItem="7Ev-J7-04y" firstAttribute="centerY" secondItem="4gp-AD-am9" secondAttribute="centerY" id="hSs-cJ-nKT"/>
+                            <constraint firstItem="fH4-Qo-IRF" firstAttribute="leading" secondItem="zP1-Ji-RyH" secondAttribute="leading" constant="33" id="iT3-l3-zlV"/>
+                            <constraint firstItem="cuf-Up-Mqp" firstAttribute="centerX" secondItem="J3z-JD-9sv" secondAttribute="centerX" id="v9t-jE-5Hl"/>
+                            <constraint firstItem="zP1-Ji-RyH" firstAttribute="trailing" secondItem="fH4-Qo-IRF" secondAttribute="trailing" constant="29" id="wKY-CD-EcT"/>
+                            <constraint firstItem="fH4-Qo-IRF" firstAttribute="top" secondItem="J3z-JD-9sv" secondAttribute="bottom" constant="131" id="zb3-uW-S43"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zP1-Ji-RyH"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblMinutes" destination="7vD-e8-jnW" id="9wg-r7-1M2"/>
+                        <outlet property="lblSeconds" destination="OLH-a9-xvX" id="TOQ-bP-Gi5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NQy-qk-5xE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.521739130434788" y="308.96739130434787"/>
+        </scene>
+        <!--Green Timer-->
+        <scene sceneID="rMO-lH-r6A">
+            <objects>
+                <viewController id="aOW-54-lMo" customClass="greenTimer" customModule="smarTea" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ovH-Mw-28I">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abppBkg" translatesAutoresizingMaskIntoConstraints="NO" id="Vf2-LA-4l5">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green Tea" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxp-ib-rQl">
+                                <rect key="frame" x="96" y="257" width="222" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="dzv-hc-RJQ"/>
+                                    <constraint firstAttribute="width" constant="222" id="v67-U4-jZr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="38"/>
+                                <color key="textColor" red="0.19181371820000001" green="0.43407774249999997" blue="0.16746114819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="J2m-Ea-Rfk">
+                                <rect key="frame" x="150.33333333333334" y="339" width="113.33333333333334" height="58"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1A-Es-kzr">
+                                        <rect key="frame" x="0.0" y="0.0" width="27" height="58"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="27" id="AZR-OY-CcJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="50"/>
+                                        <color key="textColor" red="0.19181371820000001" green="0.43407774249999997" blue="0.16746114819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ya-yg-ruS">
+                                        <rect key="frame" x="34" y="0.0" width="12" height="58"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="12" id="gPe-GN-GU7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="50"/>
+                                        <color key="textColor" red="0.19181371820000001" green="0.43407774249999997" blue="0.16746114819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VkH-5k-8Zs">
+                                        <rect key="frame" x="53" y="0.0" width="60.333333333333343" height="58"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60.5" id="qsp-H7-fjv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="50"/>
+                                        <color key="textColor" red="0.19181371820000001" green="0.43407774249999997" blue="0.16746114819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Until Your Tea Is Ready!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hn5-z2-X3S">
+                                <rect key="frame" x="105.00000000000001" y="406" width="204.33333333333337" height="20"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                <color key="textColor" red="0.19181371820000001" green="0.43407774249999997" blue="0.16746114819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For best results, bring your water to 150°-160° before pouring over your tea. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6T-Nh-duW">
+                                <rect key="frame" x="33" y="557" width="352" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="352" id="0x9-pT-rgd"/>
+                                    <constraint firstAttribute="height" constant="87" id="JYM-kS-4Uy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                <color key="textColor" red="0.19181371820000001" green="0.43407774249999997" blue="0.16746114819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wC2-LT-YxJ">
+                                <rect key="frame" x="36" y="60" width="65" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="AEW-ey-xRi"/>
+                                    <constraint firstAttribute="height" constant="30" id="tc2-hu-wpR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
+                                <state key="normal" title="Home" backgroundImage="btnBkgGreen">
+                                    <color key="titleColor" red="0.92082816359999997" green="0.99781030420000005" blue="0.87449276450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="rU6-3k-6ou"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Tea Time" translatesAutoresizingMaskIntoConstraints="NO" id="CtL-jb-60R">
+                                <rect key="frame" x="117" y="91" width="177" height="172"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92082816359999997" green="0.99781030420000005" blue="0.87449276450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="pxp-ib-rQl" firstAttribute="top" secondItem="CtL-jb-60R" secondAttribute="bottom" constant="9" id="5cx-ts-IJj"/>
+                            <constraint firstItem="FNP-Aa-9xu" firstAttribute="trailing" secondItem="E6T-Nh-duW" secondAttribute="trailing" constant="29" id="6pB-3z-tQv"/>
+                            <constraint firstItem="Vf2-LA-4l5" firstAttribute="leading" secondItem="ovH-Mw-28I" secondAttribute="leading" id="8xz-T6-FUJ"/>
+                            <constraint firstItem="CtL-jb-60R" firstAttribute="leading" secondItem="FNP-Aa-9xu" secondAttribute="leading" constant="117" id="Emp-Sd-1Qc"/>
+                            <constraint firstItem="E6T-Nh-duW" firstAttribute="leading" secondItem="FNP-Aa-9xu" secondAttribute="leading" constant="33" id="HPA-vV-6wO"/>
+                            <constraint firstItem="Vf2-LA-4l5" firstAttribute="top" secondItem="FNP-Aa-9xu" secondAttribute="top" id="MHf-J5-mqj"/>
+                            <constraint firstItem="J2m-Ea-Rfk" firstAttribute="centerX" secondItem="ovH-Mw-28I" secondAttribute="centerX" id="N4J-1g-Sbe"/>
+                            <constraint firstItem="pxp-ib-rQl" firstAttribute="centerX" secondItem="ovH-Mw-28I" secondAttribute="centerX" id="QHI-ov-wyj"/>
+                            <constraint firstItem="FNP-Aa-9xu" firstAttribute="trailing" secondItem="wC2-LT-YxJ" secondAttribute="trailing" constant="313" id="VCy-Ue-gh0"/>
+                            <constraint firstItem="J2m-Ea-Rfk" firstAttribute="top" secondItem="pxp-ib-rQl" secondAttribute="bottom" constant="8" symbolic="YES" id="VrO-Rf-xYA"/>
+                            <constraint firstItem="pxp-ib-rQl" firstAttribute="centerX" secondItem="ovH-Mw-28I" secondAttribute="centerX" id="alX-k4-gU9"/>
+                            <constraint firstItem="wC2-LT-YxJ" firstAttribute="leading" secondItem="ovH-Mw-28I" secondAttribute="leading" constant="36" id="bnV-gI-TO0"/>
+                            <constraint firstItem="J2m-Ea-Rfk" firstAttribute="centerY" secondItem="ovH-Mw-28I" secondAttribute="centerY" id="btQ-1O-VhM"/>
+                            <constraint firstItem="wC2-LT-YxJ" firstAttribute="top" secondItem="FNP-Aa-9xu" secondAttribute="top" constant="40" id="fsD-KN-JFe"/>
+                            <constraint firstItem="pxp-ib-rQl" firstAttribute="centerX" secondItem="hn5-z2-X3S" secondAttribute="centerX" id="gzt-U5-NVO"/>
+                            <constraint firstItem="Vf2-LA-4l5" firstAttribute="centerX" secondItem="pxp-ib-rQl" secondAttribute="centerX" id="isH-5E-ooP"/>
+                            <constraint firstItem="Vf2-LA-4l5" firstAttribute="bottom" secondItem="FNP-Aa-9xu" secondAttribute="bottom" id="oVc-tg-i6Z"/>
+                            <constraint firstItem="E6T-Nh-duW" firstAttribute="top" secondItem="hn5-z2-X3S" secondAttribute="bottom" constant="131" id="qUQ-7L-T9o"/>
+                            <constraint firstItem="CtL-jb-60R" firstAttribute="centerX" secondItem="E6T-Nh-duW" secondAttribute="centerX" id="weS-m9-w1v"/>
+                            <constraint firstItem="FNP-Aa-9xu" firstAttribute="bottom" secondItem="E6T-Nh-duW" secondAttribute="bottom" constant="92" id="zQM-jC-sbM"/>
+                            <constraint firstItem="CtL-jb-60R" firstAttribute="top" secondItem="FNP-Aa-9xu" secondAttribute="top" constant="71" id="zVi-7d-P7V"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FNP-Aa-9xu"/>
+                    </view>
+                    <connections>
+                        <outlet property="GTmin" destination="G1A-Es-kzr" id="Rzs-Ur-l8O"/>
+                        <outlet property="GTsec" destination="VkH-5k-8Zs" id="HhN-b7-l0L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AS6-Z1-v85" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908.69565217391312" y="308.96739130434787"/>
+        </scene>
+        <!--White Timer-->
+        <scene sceneID="65W-I5-VZM">
+            <objects>
+                <viewController id="DjY-gz-pCw" customClass="whiteTimer" customModule="smarTea" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pCK-t1-bQY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abppBkg" translatesAutoresizingMaskIntoConstraints="NO" id="58D-46-dCd">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tea Time" translatesAutoresizingMaskIntoConstraints="NO" id="2z8-Gy-OVg">
+                                <rect key="frame" x="115" y="101" width="186" height="148"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7eJ-q7-HNw">
+                                <rect key="frame" x="149.33333333333334" y="339" width="115.33333333333334" height="58"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hT0-Vd-f7h">
+                                        <rect key="frame" x="0.0" y="0.0" width="27" height="58"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="27" id="jH0-qk-nKW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="50"/>
+                                        <color key="textColor" red="0.19181371820000001" green="0.43407774249999997" blue="0.16746114819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpq-J8-62e">
+                                        <rect key="frame" x="35" y="0.0" width="12" height="58"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="12" id="7bW-y2-Bkd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="50"/>
+                                        <color key="textColor" red="0.19181371820000001" green="0.43407774249999997" blue="0.16746114819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ii-dG-jgA">
+                                        <rect key="frame" x="55" y="0.0" width="60.333333333333343" height="58"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60.5" id="vyh-4c-3Ll"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="50"/>
+                                        <color key="textColor" red="0.19181371820000001" green="0.43407774249999997" blue="0.16746114819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Until Your Tea Is Ready!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJb-zj-5wS">
+                                <rect key="frame" x="105.00000000000001" y="406" width="204.33333333333337" height="20"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                <color key="textColor" red="0.19181371820000001" green="0.43407774249999997" blue="0.16746114819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8HP-4S-6DU">
+                                <rect key="frame" x="36" y="60" width="65" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9V2-5T-Ed2"/>
+                                    <constraint firstAttribute="width" constant="65" id="pAb-Ja-UOW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
+                                <state key="normal" title="Home" backgroundImage="btnBkgGreen">
+                                    <color key="titleColor" red="0.92082816359999997" green="0.99781030420000005" blue="0.87449276450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="BrA-87-tY6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For best results,  bring your water to 180° before pouring over your tea" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnR-D6-LOJ">
+                                <rect key="frame" x="33" y="557" width="352" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="Nbn-TT-akw"/>
+                                    <constraint firstAttribute="width" constant="352" id="mUL-Sp-fFO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                <color key="textColor" red="0.19181371820000001" green="0.43407774249999997" blue="0.16746114819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="White Tea" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92v-im-hqn">
+                                <rect key="frame" x="97" y="257" width="222" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="3dB-tq-lkR"/>
+                                    <constraint firstAttribute="width" constant="222" id="a0W-1J-3gU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="38"/>
+                                <color key="textColor" red="0.19181371820000001" green="0.43407774249999997" blue="0.16746114819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92082816359999997" green="0.99781030420000005" blue="0.87449276450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="2z8-Gy-OVg" firstAttribute="leading" secondItem="pw6-se-a4R" secondAttribute="leading" constant="115" id="21B-dR-lNc"/>
+                            <constraint firstItem="58D-46-dCd" firstAttribute="leading" secondItem="pCK-t1-bQY" secondAttribute="leading" id="4wH-i5-CgK"/>
+                            <constraint firstItem="pw6-se-a4R" firstAttribute="trailing" secondItem="8HP-4S-6DU" secondAttribute="trailing" constant="313" id="8AS-FB-l4n"/>
+                            <constraint firstItem="58D-46-dCd" firstAttribute="bottom" secondItem="pw6-se-a4R" secondAttribute="bottom" id="A5M-N6-0PH"/>
+                            <constraint firstItem="fnR-D6-LOJ" firstAttribute="leading" secondItem="pw6-se-a4R" secondAttribute="leading" constant="33" id="GIj-B2-U6S"/>
+                            <constraint firstItem="8HP-4S-6DU" firstAttribute="leading" secondItem="pCK-t1-bQY" secondAttribute="leading" constant="36" id="HCn-Fv-lWV"/>
+                            <constraint firstItem="2z8-Gy-OVg" firstAttribute="top" secondItem="pw6-se-a4R" secondAttribute="top" constant="74" id="Hu1-Nk-set"/>
+                            <constraint firstItem="fnR-D6-LOJ" firstAttribute="top" secondItem="pJb-zj-5wS" secondAttribute="bottom" constant="131" id="Kfc-ld-H27"/>
+                            <constraint firstItem="pJb-zj-5wS" firstAttribute="top" secondItem="7eJ-q7-HNw" secondAttribute="bottom" constant="9" id="My9-Zq-ooi"/>
+                            <constraint firstItem="92v-im-hqn" firstAttribute="top" secondItem="2z8-Gy-OVg" secondAttribute="bottom" constant="17" id="NIA-eI-ZUw"/>
+                            <constraint firstItem="pw6-se-a4R" firstAttribute="bottom" secondItem="fnR-D6-LOJ" secondAttribute="bottom" constant="92" id="PUO-9b-znd"/>
+                            <constraint firstItem="2z8-Gy-OVg" firstAttribute="centerX" secondItem="pCK-t1-bQY" secondAttribute="centerX" id="Qfb-Dn-HXW"/>
+                            <constraint firstItem="92v-im-hqn" firstAttribute="top" secondItem="2z8-Gy-OVg" secondAttribute="bottom" constant="8" id="Qpg-Za-7Dl"/>
+                            <constraint firstItem="pw6-se-a4R" firstAttribute="trailing" secondItem="fnR-D6-LOJ" secondAttribute="trailing" constant="29" id="TTH-lz-Nux"/>
+                            <constraint firstItem="92v-im-hqn" firstAttribute="leading" secondItem="pw6-se-a4R" secondAttribute="leading" constant="97" id="bEM-jM-fVy"/>
+                            <constraint firstItem="2z8-Gy-OVg" firstAttribute="top" secondItem="pw6-se-a4R" secondAttribute="top" constant="81" id="n5x-0X-Nld"/>
+                            <constraint firstItem="58D-46-dCd" firstAttribute="centerX" secondItem="7eJ-q7-HNw" secondAttribute="centerX" id="niw-Et-pIv"/>
+                            <constraint firstItem="7eJ-q7-HNw" firstAttribute="centerX" secondItem="pCK-t1-bQY" secondAttribute="centerX" id="nsz-1M-nuC"/>
+                            <constraint firstItem="58D-46-dCd" firstAttribute="top" secondItem="pw6-se-a4R" secondAttribute="top" id="qnq-v3-aTi"/>
+                            <constraint firstItem="7eJ-q7-HNw" firstAttribute="centerY" secondItem="pCK-t1-bQY" secondAttribute="centerY" id="rxR-UF-NxQ"/>
+                            <constraint firstItem="7eJ-q7-HNw" firstAttribute="top" secondItem="92v-im-hqn" secondAttribute="bottom" constant="6" id="spj-mH-kfl"/>
+                            <constraint firstItem="2z8-Gy-OVg" firstAttribute="centerX" secondItem="92v-im-hqn" secondAttribute="centerX" id="tor-Iz-p6b"/>
+                            <constraint firstItem="7eJ-q7-HNw" firstAttribute="top" secondItem="92v-im-hqn" secondAttribute="bottom" constant="8" id="unI-nM-Pgm"/>
+                            <constraint firstItem="58D-46-dCd" firstAttribute="centerX" secondItem="pJb-zj-5wS" secondAttribute="centerX" id="vfu-Dw-D7k"/>
+                            <constraint firstItem="92v-im-hqn" firstAttribute="top" secondItem="2z8-Gy-OVg" secondAttribute="bottom" constant="8" id="vkg-XI-OuH"/>
+                            <constraint firstItem="8HP-4S-6DU" firstAttribute="top" secondItem="pw6-se-a4R" secondAttribute="top" constant="40" id="xHZ-Yr-eRD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pw6-se-a4R"/>
+                    </view>
+                    <connections>
+                        <outlet property="WTmin" destination="hT0-Vd-f7h" id="wQe-KL-hFA"/>
+                        <outlet property="wtSec" destination="1Ii-dG-jgA" id="6v8-Fl-SmK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xBV-g5-mYe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1778.2608695652175" y="305.70652173913044"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Tea Time" width="185.52000427246094" height="215.75999450683594"/>
+        <image name="abppBkg" width="612" height="792"/>
+        <image name="btnBkgGreen" width="241" height="46.080001831054688"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="rU6-3k-6ou"/>
+    </inferredMetricsTieBreakers>
+</document>
